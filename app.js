@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const {Sequelize} = require('sequelize');
+// static middleware for serving static files
+
 
 // import instance of sequelize that was instantiated for you in the models/index.js file
 const  db = require('./models');
@@ -19,12 +21,14 @@ db.sequelize
       console.log('Unable to connect to the database:', err);
     });
 
-db.sequelize.sync()
+db.sequelize.sync();
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+app.use(express.static('public'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -39,22 +43,37 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
+// 404 handling middleware
+app.use(function(req, res, next){
+    let error = new Error();
+    error.status = 404;
+    error.message = 'Sorry, the page could not be found!';
+    res.render('page-not-found', {error});
+    res.status(404);
 });
 
 // error handler
 app.use(function(err, req, res, next) {
+
+    if (!err.status) {
+        err.status = 500;
+    }
+
+    if (err) {
+        err.message = 'Sorry, an internal server error was detected';
+    }
+
   // set locals, only providing error in development
-  res.locals.message = err.message;
+    res.locals.title = 'Error';
+    res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
+  console.log('err.status ' , err.status);
+  console.log('err.message ' , err.message);
   // render the error page
   res.status(err.status || 500);
   res.render('error');
 });
-
 
 
 module.exports = app;
