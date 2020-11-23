@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26010f09-7570-4161-93b9-e49adfeeea22" name="Default Changelist" comment="" />
+    <list default="true" id="26010f09-7570-4161-93b9-e49adfeeea22" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-markup/all_books.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-markup/book_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-markup/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-markup/form-error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-markup/new_book.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-markup/page_not_found.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/20201123122748-create-book.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/book.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/error.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/index.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/layout.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +50,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -47,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606133132007</updated>
-      <workItem from="1606133133096" duration="139000" />
+      <workItem from="1606133133096" duration="7651000" />
     </task>
     <servers />
   </component>
