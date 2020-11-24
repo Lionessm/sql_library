@@ -15,19 +15,19 @@ function asyncHandler(cb){
 }
 
 /* GET home page. */
+router.get('/', function (req, res) {
+  res.redirect('/books')
+});
+
+// Shows the all books page
 router.get('/books', asyncHandler(async (req, res) => {
   const books = await Book.findAll();
   res.render('all_books', {books});
 }));
 
-// ROUTES
-router.get('/', function (req, res) {
-  res.redirect('/books')
-});
-
 // Shows the create new book form
 router.get('/books/new ', function(req, res) {
-  res.render('new_book')
+  res.render('new_book', { book: {}, title: "New Book" });
 });
 // Posts a new book to the database -----?????HOW
 router.post('/books/new ', function(req, res) {
