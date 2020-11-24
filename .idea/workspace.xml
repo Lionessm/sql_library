@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26010f09-7570-4161-93b9-e49adfeeea22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/all_books.jade" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/book_detail.jade" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/form-error.jade" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/new_book.jade" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/page-not-found.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/page-not-found.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/all_books.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/all_books.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/book_detail.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/book_detail.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/error.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/error.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/form-error.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/form-error.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/new_book.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/new_book.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/page-not-found.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/page-not-found.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606133132007</updated>
-      <workItem from="1606133133096" duration="19240000" />
+      <workItem from="1606133133096" duration="23354000" />
     </task>
     <servers />
   </component>
