@@ -71,6 +71,7 @@ app.use(function(err, req, res, next) {
 // 404 handling middleware
 app.use(function(req, res, next){
     res.locals.title = 'Page not found';
+
     let error = new Error();
     error.status = 404;
     error.message = 'Sorry, the page could not be found!';

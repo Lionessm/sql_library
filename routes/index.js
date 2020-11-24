@@ -14,46 +14,54 @@ function asyncHandler(cb){
   }
 }
 
-/* GET home page. */
+// GET home page. //
 router.get('/', function (req, res) {
   res.redirect('/books')
 });
 
-// Shows the all books page
+// Shows the all books page.
 router.get('/books', asyncHandler(async (req, res) => {
   const books = await Book.findAll();
   res.render('all_books', {books});
 }));
 
-// Shows the create new book form
+// Shows the create new book form.
 router.get('/books/new', function(req, res) {
   res.render('new_book', { book: {}, title: 'New Book' });
 });
 
-// Posts a new book to the database -----?????HOW
+// Posts a new book to the database.
 router.post('/books/new', asyncHandler(async (req, res) => {
   const book = await Book.create(req.body);
   res.redirect("/books/" + book.id);
 }));
 
-//  Shows book detail form
-router.get('/books/:id', function (req, res) {
+// Shows book detail form.
+router.get('/books/:id', asyncHandler (async (req, res) => {
+  res.locals.book = await Book.findByPk(req.params.id);
   res.render('book_detail')
-});
+}));
 
-// Updates book info in the database -----??????
+// Updates book info in the database
 router.post('/books/:id', asyncHandler(async(req, res) => {
   const book = await Book.findByPk(req.params.id);
   if (book) {
-    res.render("articles/edit", { article: book, title: "Edit Book" });
+    await book.update(req.body);
+    res.redirect("/books/" + book.id);
   } else {
     res.sendStatus(404);
   }
 }));
 
 // Deletes a book
-router.post('/books/:id/delete', function(req,res) {
-
-});
+router.post('/books/:id/delete', asyncHandler(async (req,res) => {
+  const book = await Book.findByPk(req.params.id);
+  if (book) {
+    await book.destroy();
+    res.redirect("/books/");
+  } else {
+    res.sendStatus(404);
+  }
+}));
 
 module.exports = router;

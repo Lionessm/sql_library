@@ -9,6 +9,11 @@ module.exports = (sequelize) => {
      * The `models/index` file will call this method automatically.
      */
   Book.init({
+    id: {
+      type: Sequelize.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+    },
 
     title: {
       type: Sequelize.STRING,
@@ -27,16 +32,28 @@ module.exports = (sequelize) => {
         notNull: {
           msg: 'Please provide a valid author.'
         }
-      },
+      }
+    },
 
       genre: {
         type: Sequelize.STRING,
+        allowNull: false,
+        validate: {
+          notNull: {
+            msg: 'Please provide a valid genre.'
+          }
+        }
       },
 
       year: {
         type: Sequelize.INTEGER,
-      }
-    }
+        allowNull: false,
+        validate: {
+          notNull: {
+            msg: 'Please provide a valid year.'
+          }
+        }
+      },
   },  { sequelize, modelName: 'Book'});
 
   return Book;
