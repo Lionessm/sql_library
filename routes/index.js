@@ -49,8 +49,17 @@ router.get('/books/:id', asyncHandler (async (req, res) => {
 // Updates book info in the database
 router.post('/books/:id', asyncHandler(async(req, res) => {
   const book = await Book.findByPk(req.params.id);
+
   if (book) {
-    await book.update(req.body);
+
+    try {
+      console.log("req.body ", req.body);
+      await book.update(req.body);
+
+    } catch (err) {
+      res.render('form-error');
+    }
+
     res.redirect("/books/" + book.id);
   } else {
     res.sendStatus(404);
