@@ -2,13 +2,13 @@ extends layout
 
 block content
     h1 Update Book
-    form
+    form(method='post' action=`/books/${book.id}/` onsubmit="return confirm('You have updated the book information!');")
       p
         label(for='title') Title
-        input#title(name='title' type='text' value=`${book.title}`)
+        input#title(name='title' type='text' value=`${book.title}` required)
       p
         label(for='author') Author
-        input#author(name='author' type='text' value=`${book.author}`)
+        input#author(name='author' type='text' value=`${book.author}` required)
       p
         label(for='genre') Genre
         input#genre(name='genre' type='text' value=`${book.genre}`)
