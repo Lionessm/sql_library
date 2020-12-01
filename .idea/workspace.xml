@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="26010f09-7570-4161-93b9-e49adfeeea22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.db" beforeDir="false" afterPath="$PROJECT_DIR$/library.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/book.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/book_detail.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/book_detail.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/form-error.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/form-error.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,7 @@
       <workItem from="1606820523341" duration="20000" />
       <workItem from="1606820624592" duration="4000" />
       <workItem from="1606820697771" duration="9000" />
-      <workItem from="1606820732266" duration="8200000" />
+      <workItem from="1606820732266" duration="8747000" />
     </task>
     <servers />
   </component>
@@ -71,5 +69,9 @@
       <screen x="0" y="23" width="1440" height="789" />
     </state>
     <state x="530" y="252" width="598" height="490" key="find.popup/0.23.1440.789@0.23.1440.789" timestamp="1606233639533" />
+    <state x="494" y="132" width="670" height="676" key="search.everywhere.popup" timestamp="1606836296000">
+      <screen x="0" y="23" width="1440" height="785" />
+    </state>
+    <state x="494" y="132" width="670" height="676" key="search.everywhere.popup/0.23.1440.785@0.23.1440.785" timestamp="1606836296000" />
   </component>
 </project>

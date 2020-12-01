@@ -57,6 +57,7 @@ router.post('/books/:id', asyncHandler(async(req, res) => {
       await book.update(req.body);
 
     } catch (err) {
+      res.locals.book = book;
       res.render('form-error');
     }
 
