@@ -21,8 +21,8 @@ router.get('/', function (req, res) {
 
 // Shows the all books page.
 router.get('/books', asyncHandler(async (req, res) => {
-  const books = await Book.findAll();
-  res.render('all_books', {books});
+  res.locals.books = await Book.findAll();
+  res.render('all_books');
 }));
 
 // Shows the create new book form.
