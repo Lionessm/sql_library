@@ -3,16 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="26010f09-7570-4161-93b9-e49adfeeea22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library.db" beforeDir="false" afterPath="$PROJECT_DIR$/library.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/book.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/all_books.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/all_books.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/book_detail.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/book_detail.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -31,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
@@ -41,19 +43,6 @@
       <recent name="$PROJECT_DIR$/views" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,7 +51,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606133132007</updated>
-      <workItem from="1606133133096" duration="37308000" />
+      <workItem from="1606133133096" duration="39026000" />
+      <workItem from="1606820523341" duration="20000" />
+      <workItem from="1606820624592" duration="4000" />
+      <workItem from="1606820697771" duration="9000" />
+      <workItem from="1606820732266" duration="813000" />
     </task>
     <servers />
   </component>

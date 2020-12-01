@@ -39,7 +39,11 @@ router.post('/books/new', asyncHandler(async (req, res) => {
 // Shows book detail form.
 router.get('/books/:id', asyncHandler (async (req, res) => {
   res.locals.book = await Book.findByPk(req.params.id);
-  res.render('book_detail')
+  if (!res.locals.book) {
+    res.redirect('/page_not_found')
+  } else {
+    res.render('book_detail')
+  }
 }));
 
 // Updates book info in the database
