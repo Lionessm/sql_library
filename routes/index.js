@@ -32,8 +32,17 @@ router.get('/books/new', asyncHandler( async (req, res) =>{
 
 // Posts a new book to the database.
 router.post('/books/new', asyncHandler(async (req, res) => {
-  res.locals.book = await Book.create(req.body);
-  res.redirect("/books/");
+
+    try {
+        const book = await Book.create(req.body);
+
+      } catch (err) {
+        res.locals.book = req.body;
+        res.render('form-error');
+      }
+
+      res.redirect("/books/");
+
 }));
 
 // Shows book detail form.
@@ -57,6 +66,7 @@ router.post('/books/:id', asyncHandler(async(req, res) => {
       await book.update(req.body);
 
     } catch (err) {
+      // definestre o proprietate book globala pentru templateul de pug
       res.locals.book = book;
       res.render('form-error');
     }
