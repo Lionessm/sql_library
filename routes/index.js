@@ -61,7 +61,7 @@ router.post('/books/:id', asyncHandler(async(req, res) => {
       res.render('form-error');
     }
 
-    res.redirect("/books/" + book.id);
+    res.redirect("/books/");
   } else {
     res.sendStatus(404);
   }
