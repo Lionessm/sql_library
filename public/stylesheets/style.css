@@ -1,50 +1,97 @@
 body {
-  padding: 50px;
-  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 10px 50px 50px;
+  font: 18px "Garamond", serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #019875;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.4s;
 }
 
-td {
-  padding: 20px;
+a:hover {
+  color: black;
 }
 
-td:nth-child(even) {
-  background-color: #d4cdf5;
-}
-td:nth-child(odd) {
-  background-color: #f5d0cd;
-}
-
-form {
-  padding:20px;
-  display: block;
-  margin-top: 0em;
+a.button, input[type=submit] {
+  color: white;
+  background: #019875;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 10px 14px 12px;
+  font-size: 14px;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
-h1 {
-  background-color: #8bd1d3;
-  padding: 20px;
+form a.button, input[type=submit] {
+  margin-left: 140px;
+  transition: 0.4s;
+}
+
+input[type=submit] {
+  border: 0;
+}
+
+a.button:hover, input[type=submit]:hover {
+  background-color: #01b189;
 }
 
 p {
-  background-color: #cdf5db;
-  padding: 10px;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin: 20px auto;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 10px;
+  line-height: 1.3em;
+}
+
+h2 {
+  border-top: 2px solid #e7e7e7;
+  padding-top: 20px;
+}
+
+th {
+  border-bottom: 2px solid #D8B493;
+  text-align: left;
+  padding: 5px 20px 5px 10px;
+}
+
+tr {
+  min-height: 50px;
+}
+
+tr:nth-child(2n) {
+  background: #E7E7E7;
+}
+
+td {
+  padding: 5px 20px 5px 10px;
+}
+
+label {
+  font-weight: bold;
+  min-width: 130px;
+  display: inline-block;
+  transition: 0.4s;
 }
 
 input {
-  border-radius: 3px;
-  border-color: #f5d0cd;
-  background-color: #fff;
-  margin-left: 20px;
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 10px;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  border-radius: 2px;
+  border-color: #E7E7E7;
+  transition: 0.4s;
+}
+
+input[type=text] {
+  margin-left: 7px;
+  width: 300px;
+}
+
+.error {
+  color: rgb(236, 15, 15);
 }
