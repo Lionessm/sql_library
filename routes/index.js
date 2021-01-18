@@ -14,7 +14,7 @@ function asyncHandler(cb){
   }
 }
 
-// GET home page. //
+// GET home page.
 router.get('/', function (req, res) {
   res.redirect('/books')
 });
@@ -64,16 +64,14 @@ router.post('/books/:id', asyncHandler(async(req, res) => {
   if (book) {
 
     try {
-      console.log("req.body ", req.body);
       await book.update(req.body);
-
+      res.redirect("/books/");
     } catch (err) {
-      // definestre o proprietate book globala pentru templateul de pug
+      // Defines a global "book" property for the pug template.
       res.locals.book = book;
       res.render('form-error');
     }
 
-    res.redirect("/books/");
   } else {
     res.sendStatus(404);
   }
