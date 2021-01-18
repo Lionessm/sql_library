@@ -36,14 +36,11 @@ router.post('/books/new', asyncHandler(async (req, res) => {
   res.locals.isAdd = true
 
     try {
-        console.log("req.body ", req.body);
         const book = await Book.create(req.body);
+        res.redirect("/books/");
 
-        res.send({"book": book})
-        //res.redirect("/books/");
     } catch (err) {
         res.locals.book = req.body;
-        console.log("res.locals.book ", res.locals.book);
         res.render('form-error');
     }
 }));
