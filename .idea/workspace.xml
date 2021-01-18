@@ -4,8 +4,8 @@
     <list default="true" id="26010f09-7570-4161-93b9-e49adfeeea22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library.db" beforeDir="false" afterPath="$PROJECT_DIR$/library.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/form-error.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/form-error.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/new_book.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/new_book.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,7 @@
       <workItem from="1609932121721" duration="4031000" />
       <workItem from="1610575083674" duration="1229000" />
       <workItem from="1610618405206" duration="63000" />
-      <workItem from="1610959974141" duration="434000" />
+      <workItem from="1610959974141" duration="3476000" />
     </task>
     <servers />
   </component>
@@ -74,13 +74,26 @@
       <screen x="0" y="23" width="1440" height="789" />
     </state>
     <state x="229" y="56" key="SettingsEditor/0.23.1440.789@0.23.1440.789" timestamp="1606146619879" />
-    <state x="530" y="252" width="598" height="490" key="find.popup" timestamp="1606233639533">
-      <screen x="0" y="23" width="1440" height="789" />
+    <state x="530" y="249" width="598" height="490" key="find.popup" timestamp="1610961722645">
+      <screen x="0" y="23" width="1440" height="779" />
     </state>
+    <state x="530" y="249" width="598" height="490" key="find.popup/0.23.1440.779@0.23.1440.779" timestamp="1610961722645" />
     <state x="530" y="252" width="598" height="490" key="find.popup/0.23.1440.789@0.23.1440.789" timestamp="1606233639533" />
     <state x="494" y="132" width="670" height="676" key="search.everywhere.popup" timestamp="1606836296000">
       <screen x="0" y="23" width="1440" height="785" />
     </state>
     <state x="494" y="132" width="670" height="676" key="search.everywhere.popup/0.23.1440.785@0.23.1440.785" timestamp="1606836296000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>69</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

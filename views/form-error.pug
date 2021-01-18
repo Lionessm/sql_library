@@ -2,7 +2,11 @@ extends layout
 
 block content
     h1 Book
-    form(method='post' action=`/books/${book.id}/`)
+    if isAdd
+      actionURL = 'book/new'
+    else
+      actionURL = `/books/${book.id}/`
+    form(method='post' action= actionURL)
       h2.error Oooops!
       ul.error
         li Author is required

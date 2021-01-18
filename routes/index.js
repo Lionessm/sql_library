@@ -33,16 +33,19 @@ router.get('/books/new', asyncHandler( async (req, res) =>{
 // Posts a new book to the database.
 router.post('/books/new', asyncHandler(async (req, res) => {
 
+  res.locals.isAdd = true
+
     try {
+        console.log("req.body ", req.body);
         const book = await Book.create(req.body);
 
-      } catch (err) {
+        res.send({"book": book})
+        //res.redirect("/books/");
+    } catch (err) {
         res.locals.book = req.body;
+        console.log("res.locals.book ", res.locals.book);
         res.render('form-error');
-      }
-
-      res.redirect("/books/");
-
+    }
 }));
 
 // Shows book detail form.
@@ -57,6 +60,8 @@ router.get('/books/:id', asyncHandler (async (req, res) => {
 
 // Updates book info in the database
 router.post('/books/:id', asyncHandler(async(req, res) => {
+
+  res.locals.isAdd = false;
   const book = await Book.findByPk(req.params.id);
 
   if (book) {
