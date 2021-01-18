@@ -27,7 +27,7 @@ router.get('/books', asyncHandler(async (req, res) => {
 
 // Shows the create new book form.
 router.get('/books/new', asyncHandler( async (req, res) =>{
-  res.render('new_book', { book: {}, title: 'New Book' });
+  res.render('new-book', { book: {}, title: 'New Book' });
 }));
 
 // Posts a new book to the database.
@@ -54,7 +54,7 @@ router.get('/books/:id', asyncHandler (async (req, res) => {
     error.status(400);
     throw error;
   } else {
-    res.render('book_detail')
+    res.render('update-book')
   }
 }));
 
