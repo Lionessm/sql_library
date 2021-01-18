@@ -3,9 +3,9 @@ extends layout
 block content
     h1 Book
     if isAdd
-      actionURL = 'book/new'
+      -var actionURL= '/books/new'
     else
-      actionURL = `/books/${book.id}/`
+      -var actionURL= `/books/${book.id}/`
     form(method='post' action= actionURL)
       h2.error Oooops!
       ul.error
