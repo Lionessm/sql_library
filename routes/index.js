@@ -50,6 +50,9 @@ router.get('/books/:id', asyncHandler (async (req, res) => {
   res.locals.book = await Book.findByPk(req.params.id);
   if (!res.locals.book) {
     res.redirect('/page_not_found')
+    let error = new Error();
+    error.status(400);
+    throw error;
   } else {
     res.render('book_detail')
   }
@@ -62,7 +65,6 @@ router.post('/books/:id', asyncHandler(async(req, res) => {
   const book = await Book.findByPk(req.params.id);
 
   if (book) {
-
     try {
       await book.update(req.body);
       res.redirect("/books/");
@@ -71,7 +73,6 @@ router.post('/books/:id', asyncHandler(async(req, res) => {
       res.locals.book = book;
       res.render('form-error');
     }
-
   } else {
     res.sendStatus(404);
   }
