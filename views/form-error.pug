@@ -9,8 +9,10 @@ block content
     form(method='post' action= actionURL)
       h2.error Oooops!
       ul.error
-        li Author is required
-        li Name is required
+        if !`${book.author}`
+          li Author is required
+        if !`${book.title}`
+          li Name is required
       p
         label(for='title') Title
         input#title(name='title' type='text' value=`${book.title}`)
